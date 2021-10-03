@@ -1,25 +1,18 @@
 
-// import './App.css';
-// import Banner from './Components/Banner/Banner';
-// import NavBar from './Components/NavBar/NavBar';
-// import RowPost from './Components/RowPost/RowPost';
-import axios from 'axios'
-import {useState} from 'react';
-import Table from './Table';
-
-
-
+import './App.css';
+import Banner from './Components/Banner/Banner';
+import NavBar from './Components/NavBar/NavBar';
+import RowPost from './Components/RowPost/RowPost'; 
 
 
 function App() {
-  const [state, setState] =useState([])
+  
   return (
     <div>
-      {/* <NavBar/>
+      <NavBar/>
       <Banner/>
       <RowPost/>
-      <RowPost/> */}
-      <h1>Hello world!</h1>
+      {/* <h1>Hello world!</h1>
       <button
         onClick={() => {
           axios
@@ -30,8 +23,8 @@ function App() {
             .catch((error) => {
               console.log(error);
             });
-        }}> CLick this  </button>
-     {state.length >0 &&
+        }}> CLick this  </button> */}
+     {/* {state.length >0 &&
         <table>
         <tr>
           <th>Company</th>
@@ -40,7 +33,7 @@ function App() {
         </tr>
         <Table data={state}/>
       </table>
-      }
+      } */}
       
     </div>
   );
