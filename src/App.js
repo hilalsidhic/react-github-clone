@@ -3,7 +3,7 @@ import './App.css';
 import Banner from './Components/Banner/Banner';
 import NavBar from './Components/NavBar/NavBar';
 import RowPost from './Components/RowPost/RowPost'; 
-
+import {action, comedy, documentaries, horror, originals, romance } from './Urls'
 
 function App() {
   
@@ -11,7 +11,13 @@ function App() {
     <div>
       <NavBar/>
       <Banner/>
-      <RowPost/>
+      <RowPost title="Netflix Originals" genre={originals}/>
+      <RowPost title="Action" genre={action} small/>
+      <RowPost title="Comedy" genre={comedy} small/>
+      <RowPost title="Horror" genre={horror} small/>
+      <RowPost title="Documentaries" genre={documentaries} small/>
+      <RowPost title="Romance" genre={romance} small/>
+
       {/* <h1>Hello world!</h1>
       <button
         onClick={() => {
