@@ -44,7 +44,8 @@ function RowPost(props) {
             </div>
             {ytMovie &&
             <div id="youtube">
-                <Youtube videoId={ytMovie} opts={opts}  />
+                <button className="button-close" onClick={()=>{setytMovie()}}>Close</button>
+                <Youtube videoId={ytMovie} opts={opts} />
             </div> }
             
         </div>
